@@ -2,19 +2,18 @@ import { Event } from './event.dto';
 import { v4 } from 'uuid';
 
 export const exampleData: Event[] = [
-  Event.create(v4(), 'Teamevent', new Date(), 'Cologne'),
   Event.create(
     v4(),
     'X-mas party',
     new Date('2023-12-22T20:00:00Z'),
     'Cologne',
   ),
-  Event.create(v4(), 'Carnival', new Date('2023-02-12T20:00:00Z'), 'Aachen'),
+  Event.create(v4(), 'Carnival', new Date('2023-02-12T20:00:00Z'), 'Cologne'),
   {
     id: v4(),
     title: "New Year's Eve",
     date: new Date('2023-12-31T22:00:00Z'),
-    city: 'Kerken',
+    city: 'Aachen',
     tickets: [
       {
         firstName: 'Cassidy',
