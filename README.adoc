@@ -13,4 +13,11 @@ The following programmes are required to start the project:
 * https://nodejs.org/en[NodeJs (20.x)]
 * https://pnpm.io/[PNPM]
 
-After this, any necessary dependencies can be installed using the `pnpm install` command. Once all dependencies have been successfully installed and downloaded, the applications can be started using the `pnpm start` command.
+After this, any necessary dependencies can be installed using the `pnpm install` command. 
+
+== Start developing
+
+Once all dependencies have been successfully installed and downloaded, the applications can be started with the `pnpm start' command. The backend is now accessible on port 3000. The frontend can be reached on port 3001 (http://localhost:3001).
+
+
+Now both the backend and the frontend can be developed. NestJS does not provide hot reload by default, so the appropriate https://docs.nestjs.com/recipes/hot-reload[webpack plugin] must be installed and configured. This means that the backend must be restarted when changes are made. The frontend with NextJS does offer hot reload. The changes are visible live in the browser.
