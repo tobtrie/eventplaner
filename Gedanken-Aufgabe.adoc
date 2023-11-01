@@ -1,0 +1,32 @@
+= Gedanken-Aufgabe
+:docdate: date (ISO)
+:sectanchors:
+
+== Aufgabe
+Du hast vor dir 10 Maschinen die Münzen prägen. Die Münzen sehen alle gleich aus! Die Münzen wiegen 100 Gramm. Allerdings ist eine Maschine kaputt und die Münzen der Maschine wiegen 10 Gramm. Münzen stehen unendlich pro Maschine bereit und es gibt eine Digitalwaage mit der ich einmal wiegen darf, um heraus zu finden welche Maschine defekt ist. Welche Maschine ist defekt?
+
+== Lösung
+
+Jede Maschine wird eine Nummer zugeordnet, die erste Maschine wird der 1 zu geordnet, die zweite der 2 bis zur 10. Maschine. Diese wird der Zahl 10 zugeordnet. Nun wird von jeder Maschine entsprechend ihrer zugeordneten Zahl eine Anzahl von produzierter Münzen genommen:
+
+* Von der 1. Maschine 1 Münze
+* Von der 2. Machine 2 Münzen
+* …
+* Von der 10. Maschine 10 Münzen
+
+Alle Münzen werden nun auf die Digitalwaage gelegt und gewogen. Wenn alle Maschinen korrekt funktionieren würden, würde das Gewicht 5.500g betragen. Nun ist eine Machine jedoch defekt und produziert Münzen mit einem Gewicht von 10g. Durch die geschickte Auswahl der Münzen kann nun mittels der 10er Ziffer identifiziert werden welche Maschine defekt ist. Dies ist möglich da nur die defekte Maschine diese Ziffer verändert (siehe Tabelle). Ist die Ziffer an der 10er Stelle eine 0 so ist die 10. Maschine defekt.
+
+.Auflistung der möglichen Gesamtgewichte abhängig von der defekten Maschine
+|===
+| Defekte Maschine | Gesamtgewicht
+
+| Maschine 1 | 5.410g
+| Maschine 2 | 5.320g
+| Maschine 3 | 5.230g
+| Maschine 4 | 5.140g
+| Maschine 5 | 5.050g
+| Maschine 6 | 4.960g
+| Maschine 7 | 4.870g
+| Maschine 8 | 4.780g
+| Maschine 9 | 4.690g
+| Maschine 10 | 4.600g
