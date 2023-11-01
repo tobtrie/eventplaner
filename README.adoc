@@ -1,0 +1,16 @@
+= Eventplaner
+:author: Tobias Trienekens <tobias.trienekens@gmail.com>
+:docdate: date (ISO)
+:toc: auto
+:sectanchors:
+
+This project allows you to manage events and register guests. It is split into two projects. The backend is implemented using https://nestjs.com/[NestJS] and Typescript. The frontend uses https://nextjs.org/[NextJS] and https://mui.com/[Material UI]. This project contains a page where users can enter new events and also add visitors. When a new visitor is added, a unique barcode is generated. This can then be sent to the visitor.
+
+== Get started
+
+The following programmes are required to start the project:
+
+* https://nodejs.org/en[NodeJs (20.x)]
+* https://pnpm.io/[PNPM]
+
+After this, any necessary dependencies can be installed using the `pnpm install` command. Once all dependencies have been successfully installed and downloaded, the applications can be started using the `pnpm start` command.

@@ -1,0 +1,8 @@
+dist
+packages/backend/request
+.vscode
+.next
+out
+node_modules
+
+.DS_Store
